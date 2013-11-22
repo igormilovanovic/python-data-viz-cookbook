@@ -1,0 +1,39 @@
+
+    <html>
+      <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+      <script>
+        google.load('visualization', '1', {packages:['geochart', 'table']});
+
+        google.setOnLoadCallback(drawMap);
+        function drawMap() {
+            var json_data = new google.visualization.DataTable({"rows":[{"c":[{"v":"Albania"},{"f":"302.37","v":302.37}]},{"c":[{"v":"Angola"},{"f":"2365.15","v":2365.15}]},{"c":[{"v":"Argentina"},{"f":"719.06","v":719.06}]},{"c":[{"v":"Armenia"},{"f":"224.76","v":224.76}]},{"c":[{"v":"Australia"},{"f":"2927.91","v":2927.91}]},{"c":[{"v":"Austria"},{"f":"1800","v":1800.0}]},{"c":[{"v":"Azerbaijan"},{"f":"381.95","v":381.95}]},{"c":[{"v":"Bahrain"},{"f":"847.08","v":847.08}]},{"c":[{"v":"Bangladesh"},{"f":"269.41","v":269.41}]},{"c":[{"v":"Belarus"},{"f":"299.68","v":299.68}]},{"c":[{"v":"Belgium"},{"f":"2000","v":2000.0}]},{"c":[{"v":"Bolivia"},{"f":"372.73","v":372.73}]},{"c":[{"v":"Bosnia And Herzegovina"},{"f":"414.78","v":414.78}]},{"c":[{"v":"Botswana"},{"f":"563.59","v":563.59}]},{"c":[{"v":"Brazil"},{"f":"525.39","v":525.39}]},{"c":[{"v":"Bulgaria"},{"f":"355.5","v":355.5}]},{"c":[{"v":"Cambodia"},{"f":"157.33","v":157.33}]},{"c":[{"v":"Canada"},{"f":"2210.03","v":2210.03}]},{"c":[{"v":"Chile"},{"f":"749.2","v":749.2}]},{"c":[{"v":"China"},{"f":"488.44","v":488.44}]},{"c":[{"v":"Colombia"},{"f":"299.68","v":299.68}]},{"c":[{"v":"Costa Rica"},{"f":"557.35","v":557.35}]},{"c":[{"v":"Croatia"},{"f":"670.11","v":670.11}]},{"c":[{"v":"Cyprus"},{"f":"1150","v":1150.0}]},{"c":[{"v":"Czech Republic"},{"f":"776.8","v":776.8}]},{"c":[{"v":"Denmark"},{"f":"2412.88","v":2412.88}]},{"c":[{"v":"Dominican Republic"},{"f":"630.94","v":630.94}]},{"c":[{"v":"Ecuador"},{"f":"224.76","v":224.76}]},{"c":[{"v":"Egypt"},{"f":"214.23","v":214.23}]},{"c":[{"v":"El Salvador"},{"f":"215.4","v":215.4}]},{"c":[{"v":"Estonia"},{"f":"648.5","v":648.5}]},{"c":[{"v":"Ethiopia"},{"f":"142.35","v":142.35}]},{"c":[{"v":"Finland"},{"f":"2080","v":2080.0}]},{"c":[{"v":"France"},{"f":"2000","v":2000.0}]},{"c":[{"v":"Georgia"},{"f":"248.66","v":248.66}]},{"c":[{"v":"Germany"},{"f":"2000","v":2000.0}]},{"c":[{"v":"Ghana"},{"f":"262.22","v":262.22}]},{"c":[{"v":"Greece"},{"f":"750","v":750.0}]},{"c":[{"v":"Guatemala"},{"f":"421.42","v":421.42}]},{"c":[{"v":"Honduras"},{"f":"374.6","v":374.6}]},{"c":[{"v":"Hong Kong"},{"f":"1930.55","v":1930.55}]},{"c":[{"v":"Hungary"},{"f":"481.44","v":481.44}]},{"c":[{"v":"Iceland"},{"f":"1555.68","v":1555.68}]},{"c":[{"v":"India"},{"f":"325.54","v":325.54}]},{"c":[{"v":"Indonesia"},{"f":"227.61","v":227.61}]},{"c":[{"v":"Iran"},{"f":"397.53","v":397.53}]},{"c":[{"v":"Iraq"},{"f":"374.6","v":374.6}]},{"c":[{"v":"Ireland"},{"f":"2000","v":2000.0}]},{"c":[{"v":"Israel"},{"f":"1404.13","v":1404.13}]},{"c":[{"v":"Italy"},{"f":"1600","v":1600.0}]},{"c":[{"v":"Jamaica"},{"f":"855.32","v":855.32}]},{"c":[{"v":"Japan"},{"f":"2115.24","v":2115.24}]},{"c":[{"v":"Jordan"},{"f":"475.98","v":475.98}]},{"c":[{"v":"Kazakhstan"},{"f":"494.91","v":494.91}]},{"c":[{"v":"Kenya"},{"f":"437.46","v":437.46}]},{"c":[{"v":"Kuwait"},{"f":"1605.54","v":1605.54}]},{"c":[{"v":"Kyrgyzstan"},{"f":"299.68","v":299.68}]},{"c":[{"v":"Latvia"},{"f":"498.04","v":498.04}]},{"c":[{"v":"Lebanon"},{"f":"749.2","v":749.2}]},{"c":[{"v":"Libya"},{"f":"444.65","v":444.65}]},{"c":[{"v":"Lithuania"},{"f":"513.76","v":513.76}]},{"c":[{"v":"Luxembourg"},{"f":"3250","v":3250.0}]},{"c":[{"v":"Macao"},{"f":"1158.33","v":1158.33}]},{"c":[{"v":"Macedonia"},{"f":"280","v":280.0}]},{"c":[{"v":"Malaysia"},{"f":"721.43","v":721.43}]},{"c":[{"v":"Malta"},{"f":"1200","v":1200.0}]},{"c":[{"v":"Mauritius"},{"f":"374.6","v":374.6}]},{"c":[{"v":"Mexico"},{"f":"589.25","v":589.25}]},{"c":[{"v":"Moldova"},{"f":"211.78","v":211.78}]},{"c":[{"v":"Mongolia"},{"f":"374.6","v":374.6}]},{"c":[{"v":"Montenegro"},{"f":"475","v":475.0}]},{"c":[{"v":"Morocco"},{"f":"298","v":298.0}]},{"c":[{"v":"Myanmar"},{"f":"222.3","v":222.3}]},{"c":[{"v":"Namibia"},{"f":"600.8","v":600.8}]},{"c":[{"v":"Nepal"},{"f":"132","v":132.0}]},{"c":[{"v":"Netherlands"},{"f":"2000","v":2000.0}]},{"c":[{"v":"New Zealand"},{"f":"1958.95","v":1958.95}]},{"c":[{"v":"Nicaragua"},{"f":"494.47","v":494.47}]},{"c":[{"v":"Nigeria"},{"f":"498.93","v":498.93}]},{"c":[{"v":"Norway"},{"f":"3276.08","v":3276.08}]},{"c":[{"v":"Oman"},{"f":"1605.85","v":1605.85}]},{"c":[{"v":"Pakistan"},{"f":"187.3","v":187.3}]},{"c":[{"v":"Palestinian Territory"},{"f":"520.21","v":520.21}]},{"c":[{"v":"Panama"},{"f":"511.7","v":511.7}]},{"c":[{"v":"Peru"},{"f":"412.38","v":412.38}]},{"c":[{"v":"Philippines"},{"f":"224.76","v":224.76}]},{"c":[{"v":"Poland"},{"f":"589.03","v":589.03}]},{"c":[{"v":"Portugal"},{"f":"800","v":800.0}]},{"c":[{"v":"Puerto Rico"},{"f":"1378.53","v":1378.53}]},{"c":[{"v":"Qatar"},{"f":"3086.09","v":3086.09}]},{"c":[{"v":"Romania"},{"f":"336.72","v":336.72}]},{"c":[{"v":"Russia"},{"f":"541.77","v":541.77}]},{"c":[{"v":"Saudi Arabia"},{"f":"1398.39","v":1398.39}]},{"c":[{"v":"Serbia"},{"f":"350","v":350.0}]},{"c":[{"v":"Singapore"},{"f":"1975.2","v":1975.2}]},{"c":[{"v":"Slovakia"},{"f":"695","v":695.0}]},{"c":[{"v":"Slovenia"},{"f":"930","v":930.0}]},{"c":[{"v":"South Africa"},{"f":"1127.18","v":1127.18}]},{"c":[{"v":"South Korea"},{"f":"1461.85","v":1461.85}]},{"c":[{"v":"Spain"},{"f":"1200","v":1200.0}]},{"c":[{"v":"Sri Lanka"},{"f":"276.83","v":276.83}]},{"c":[{"v":"Sudan"},{"f":"262.22","v":262.22}]},{"c":[{"v":"Sweden"},{"f":"2327.72","v":2327.72}]},{"c":[{"v":"Switzerland"},{"f":"4310.42","v":4310.42}]},{"c":[{"v":"Syria"},{"f":"187.3","v":187.3}]},{"c":[{"v":"Taiwan"},{"f":"984.98","v":984.98}]},{"c":[{"v":"Thailand"},{"f":"367.68","v":367.68}]},{"c":[{"v":"Tunisia"},{"f":"265","v":265.0}]},{"c":[{"v":"Turkey"},{"f":"616.32","v":616.32}]},{"c":[{"v":"Ukraine"},{"f":"299.68","v":299.68}]},{"c":[{"v":"United Arab Emirates"},{"f":"2378","v":2378.0}]},{"c":[{"v":"United Kingdom"},{"f":"1882.41","v":1882.41}]},{"c":[{"v":"United States"},{"f":"2397.44","v":2397.44}]},{"c":[{"v":"Uruguay"},{"f":"679.44","v":679.44}]},{"c":[{"v":"Uzbekistan"},{"f":"207.37","v":207.37}]},{"c":[{"v":"Venezuela"},{"f":"509.11","v":509.11}]},{"c":[{"v":"Vietnam"},{"f":"214.31","v":214.31}]},{"c":[{"v":"Zimbabwe"},{"f":"374.6","v":374.6}]}],"cols":[{"type":"string","id":"country","label":"Country"},{"type":"number","id":"dpi","label":"EUR"}]}, 0.6);
+            
+            var options = {colorAxis: {colors: ['#eee', 'green']}};
+            var mymap = new google.visualization.GeoChart(
+                                document.getElementById('map_div'));
+            mymap.draw(json_data, options);
+            
+            var mytable = new google.visualization.Table(
+                                document.getElementById('table_div'));
+            mytable.draw(json_data, {showRowNumber: true})
+        }
+      </script>
+      <body>
+        <H1>Median Monthly Disposable Salary World Countries</H1>
+
+        <div id="map_div"></div>
+        <hr />
+        <div id="table_div"></div>
+
+        <div id="source">
+        <hr />
+        <small>
+        Source: 
+        <a href="http://www.numbeo.com/cost-of-living/prices_by_country.jsp?displayCurrency=EUR&itemId=105">
+        http://www.numbeo.com/cost-of-living/prices_by_country.jsp?displayCurrency=EUR&itemId=105
+        </a>
+        </small>
+        </div>
+      </body>
+    </html>
+    
